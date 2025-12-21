@@ -118,7 +118,9 @@ h2{
 
 .slides img{
   width:100%;
-  object-fit:cover;
+  height:450px;           /* Controls slider height */
+  object-fit:contain;     /* Shows full image, no cropping */
+  background-color:#000;  /* Clean black background */
 }
 
 @keyframes slide{
