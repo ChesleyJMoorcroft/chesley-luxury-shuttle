@@ -102,12 +102,34 @@ h2{
   margin-bottom:10px;
 }
 
-/* VEHICLE */
-.vehicle img{
-  width:100%;
+/* IMAGE SLIDER */
+.slider{
+  position:relative;
+  overflow:hidden;
   border-radius:14px;
-  margin-bottom:20px;
   box-shadow:0 15px 35px rgba(0,0,0,0.6);
+}
+
+.slides{
+  display:flex;
+  width:400%;
+  animation:slide 18s infinite;
+}
+
+.slides img{
+  width:100%;
+  object-fit:cover;
+}
+
+@keyframes slide{
+  0%{transform:translateX(0)}
+  20%{transform:translateX(0)}
+  25%{transform:translateX(-100%)}
+  45%{transform:translateX(-100%)}
+  50%{transform:translateX(-200%)}
+  70%{transform:translateX(-200%)}
+  75%{transform:translateX(-300%)}
+  100%{transform:translateX(-300%)}
 }
 
 /* RATES */
@@ -155,7 +177,7 @@ form button{
   border-radius:50px;
 }
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 .whatsapp{
   position:fixed;
   bottom:20px;
@@ -193,7 +215,7 @@ footer{
 
 <header>
   <div class="logo">
-    <!-- NEW LUXURY LOGO -->
+    <!-- LUXURY LOGO -->
     <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
       <circle cx="150" cy="150" r="138" fill="#0b0b0b" stroke="#d4af37" stroke-width="5"/>
       <circle cx="150" cy="150" r="126" fill="none" stroke="#8b0000" stroke-width="2"/>
@@ -219,21 +241,10 @@ footer{
 </header>
 
 <section>
-<h2>Our Services</h2>
-<div class="grid">
-  <div class="card"><h3>Airport Transfers</h3><p>Private luxury transfers to and from Port Elizabeth (Gqeberha) Airport.</p></div>
-  <div class="card"><h3>Private Shuttle</h3><p>Discreet, comfortable travel for leisure or business.</p></div>
-  <div class="card"><h3>Corporate Chauffeur</h3><p>Professional executive transport services.</p></div>
-  <div class="card"><h3>Custom Trips</h3><p>Tailor-made Eastern Cape journeys.</p></div>
-</div>
-</section>
-
-<section>
 <h2>Our Vehicle</h2>
-<div class="grid vehicle">
+<div class="grid">
   <div class="card">
     <h3>Red Mazda CX-5 Carbon Edition</h3>
-    <img src="https://i.imgur.com/zHT4IUd.jpg" alt="Red Mazda CX-5 Carbon Edition">
     <p>
       • Air-conditioned luxury<br>
       • Immaculately maintained<br>
@@ -242,6 +253,25 @@ footer{
       • Professional chauffeur
     </p>
   </div>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="20251102_101719.jpg" alt="Mazda CX-5 luxury shuttle">
+      <img src="20251102_101813.jpg" alt="Mazda CX-5 interior">
+      <img src="20251102_101907.jpg" alt="Mazda CX-5 rear">
+      <img src="20251102_102356.jpg" alt="Mazda CX-5 side view">
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+<h2>Our Services</h2>
+<div class="grid">
+  <div class="card"><h3>Airport Transfers</h3><p>Private luxury transfers to and from Port Elizabeth (Gqeberha) Airport.</p></div>
+  <div class="card"><h3>Private Shuttle</h3><p>Discreet, comfortable travel for leisure or business.</p></div>
+  <div class="card"><h3>Corporate Chauffeur</h3><p>Professional executive transport services.</p></div>
+  <div class="card"><h3>Custom Trips</h3><p>Tailor-made Eastern Cape journeys.</p></div>
 </div>
 </section>
 
