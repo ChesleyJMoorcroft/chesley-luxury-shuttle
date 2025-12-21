@@ -4,32 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Luxury Shuttle Service | Jeffreys Bay & Gqeberha | Chesley's Private Luxury Shuttle</title>
+<title>Chesley's Private Luxury Shuttle Service | Jeffreys Bay & Gqeberha</title>
 
-<meta name="description" content="Chesley's Private Luxury Shuttle Service offers premium airport transfers, private shuttle and chauffeur services in Jeffreys Bay, Port Elizabeth (Gqeberha) and St Francis Bay.">
+<meta name="description" content="Luxury private shuttle and airport transfers in Jeffreys Bay, Port Elizabeth (Gqeberha) and St Francis Bay. LGBTQIA+ friendly private transport in a premium Mazda CX-5.">
 <meta name="keywords" content="Luxury Shuttle Jeffreys Bay, Airport Transfers Gqeberha, Private Chauffeur Eastern Cape">
 <meta name="author" content="Chesley's Private Luxury Shuttle Service">
 
 <link rel="icon" type="image/png" href="favicon.png">
 
-<!-- GOOGLE ANALYTICS (replace G-XXXXXXXXXX later) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<!-- GOOGLE ANALYTICS -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y226H1LKWY"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
+  gtag('config', 'G-Y226H1LKWY');
 </script>
 
 <style>
-:root {
+:root{
   --gold:#d4af37;
   --red:#8b0000;
   --black:#0b0b0b;
   --card:#151515;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
   font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
@@ -41,16 +41,16 @@ body{
 /* HEADER */
 header{
   background:linear-gradient(135deg,var(--red),#000);
+  padding:90px 20px 70px;
   text-align:center;
-  padding:80px 20px 70px;
 }
 
-.logo{
-  width:100%;
+/* LOGO */
+.logo svg{
   max-width:520px;
+  width:100%;
   margin:0 auto 25px;
   display:block;
-  opacity:0;
   animation:fadeIn 1.6s ease forwards;
 }
 
@@ -60,12 +60,12 @@ header{
   width:120px;
   height:3px;
   background:var(--gold);
-  margin:20px auto 25px;
+  margin:25px auto;
 }
 
 header h1{
   color:var(--gold);
-  font-size:2.8rem;
+  font-size:2.7rem;
 }
 
 header p{
@@ -82,7 +82,7 @@ section{
 h2{
   text-align:center;
   color:var(--gold);
-  font-size:2.3rem;
+  font-size:2.2rem;
   margin-bottom:40px;
 }
 
@@ -102,7 +102,12 @@ h2{
   box-shadow:0 15px 35px rgba(0,0,0,0.5);
 }
 
-/* VEHICLE IMAGE */
+.card h3{
+  color:var(--gold);
+  margin-bottom:10px;
+}
+
+/* VEHICLE */
 .vehicle img{
   width:100%;
   border-radius:14px;
@@ -110,8 +115,16 @@ h2{
   box-shadow:0 15px 35px rgba(0,0,0,0.6);
 }
 
+/* RATES */
+.rate{
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid #333;
+  padding:12px 0;
+}
+
 /* FORM */
-form input, form textarea{
+form input,form textarea{
   width:100%;
   padding:14px;
   margin-bottom:15px;
@@ -126,7 +139,6 @@ form button{
   border:none;
   font-weight:bold;
   border-radius:50px;
-  cursor:pointer;
 }
 
 /* CTA */
@@ -147,7 +159,7 @@ form button{
   border-radius:50px;
 }
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 .whatsapp{
   position:fixed;
   bottom:20px;
@@ -170,9 +182,13 @@ footer{
   font-size:.95rem;
 }
 
-@media(max-width:768px){
-  header h1{font-size:2.2rem}
-  .logo{max-width:360px}
+/* PRIDE BAR */
+.pride{
+  height:8px;
+  background:linear-gradient(
+    to right,
+    #e40303,#ff8c00,#ffed00,#008026,#004dff,#750787
+  );
 }
 </style>
 </head>
@@ -180,90 +196,103 @@ footer{
 <body>
 
 <header>
-  <img src="chesley-luxury-shuttle-logo.png" alt="Chesley's Private Luxury Shuttle Service Logo" class="logo">
+  <div class="logo">
+    <!-- NEW PROFESSIONAL LOGO -->
+    <svg viewBox="0 0 900 140" xmlns="http://www.w3.org/2000/svg">
+      <text x="50%" y="60%" text-anchor="middle"
+        font-size="72"
+        fill="#d4af37"
+        font-family="Georgia, serif"
+        font-weight="bold">
+        Chesley’s
+      </text>
+      <text x="50%" y="95%" text-anchor="middle"
+        font-size="34"
+        fill="#ffffff"
+        font-family="Segoe UI, sans-serif">
+        Private Luxury Shuttle Service
+      </text>
+    </svg>
+  </div>
+
   <div class="divider"></div>
-  <h1>Chesley's Private Luxury Shuttle Service</h1>
   <p><strong>Where Every Journey Feels First Class</strong></p>
   <p>Jeffreys Bay • Port Elizabeth • St Francis Bay</p>
 </header>
 
 <section>
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Airport Transfers</h3>
-      <p>Luxury private transfers to and from Port Elizabeth (Gqeberha) Airport, ensuring punctual, stress-free travel.</p>
-    </div>
-    <div class="card">
-      <h3>Private Shuttle Services</h3>
-      <p>Discreet, comfortable and exclusive shuttle services for leisure or business travel.</p>
-    </div>
-    <div class="card">
-      <h3>Corporate Chauffeur</h3>
-      <p>Professional transport for executives and corporate clients who value reliability and presentation.</p>
-    </div>
-    <div class="card">
-      <h3>Custom Trips & Tours</h3>
-      <p>Tailor-made trips across the Eastern Cape, designed around your schedule and requirements.</p>
-    </div>
-  </div>
+<h2>Our Services</h2>
+<div class="grid">
+  <div class="card"><h3>Airport Transfers</h3><p>Private luxury transfers to and from Port Elizabeth (Gqeberha) Airport.</p></div>
+  <div class="card"><h3>Private Shuttle</h3><p>Discreet, comfortable travel for leisure or business.</p></div>
+  <div class="card"><h3>Corporate Chauffeur</h3><p>Professional executive transport.</p></div>
+  <div class="card"><h3>Custom Trips</h3><p>Tailor-made Eastern Cape journeys.</p></div>
+</div>
 </section>
 
 <section>
-  <h2>Our Vehicle</h2>
-  <div class="grid vehicle">
-    <div class="card">
-      <h3>Red Mazda CX-5 Carbon Edition</h3>
-      <img src="https://i.imgur.com/zHT4IUd.jpg" alt="Red Mazda CX-5 Carbon Edition Luxury Shuttle">
-      <p>
-        • Air-conditioned comfort<br>
-        • Immaculately maintained<br>
-        • Private & spacious seating<br>
-        • Professional chauffeur
-      </p>
-    </div>
+<h2>Our Vehicle</h2>
+<div class="grid vehicle">
+  <div class="card">
+    <h3>Red Mazda CX-5 Carbon Edition</h3>
+    <img src="https://i.imgur.com/zHT4IUd.jpg" alt="Red Mazda CX-5 Carbon Edition">
+    <p>
+      • Air-conditioned luxury<br>
+      • Immaculately maintained<br>
+      • Private & spacious seating<br>
+      • <strong>On-board mobile charging stations</strong><br>
+      • Professional chauffeur
+    </p>
   </div>
+</div>
 </section>
 
 <section>
-  <h2>Customer Testimonials</h2>
-  <div class="grid">
-    <div class="card">
-      <p>“Exceptional service, punctual and very professional. Highly recommended.”</p>
-    </div>
-    <div class="card">
-      <p>“Luxury travel at its best. The vehicle was spotless and extremely comfortable.”</p>
-    </div>
-    <div class="card">
-      <p>“Reliable, friendly and professional. Will definitely use again.”</p>
-    </div>
+<h2>Rates & Tariffs</h2>
+<div class="grid">
+  <div class="card">
+    <div class="rate"><span>Airport Transfers</span><span>On Request</span></div>
+    <div class="rate"><span>Private Shuttle</span><span>On Request</span></div>
+    <div class="rate"><span>Corporate Travel</span><span>On Request</span></div>
+    <div class="rate"><span>Custom Trips</span><span>On Request</span></div>
+    <p style="margin-top:15px;"><strong>All trips are private. Bookings essential.</strong></p>
   </div>
+</div>
 </section>
 
 <section>
-  <h2>Booking Request</h2>
-  <div class="grid">
-    <div class="card">
-      <form action="mailto:cjmoorcroft@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="Name" placeholder="Full Name" required>
-        <input type="tel" name="Phone" placeholder="Phone Number" required>
-        <input type="email" name="Email" placeholder="Email Address">
-        <textarea name="Details" rows="5" placeholder="Trip details, date & time" required></textarea>
-        <button type="submit">Submit Booking Request</button>
-      </form>
-    </div>
+<h2>Customer Testimonials</h2>
+<div class="grid">
+  <div class="card"><p>“Professional, punctual and luxurious. Highly recommended.”</p></div>
+  <div class="card"><p>“The most comfortable shuttle experience we’ve had.”</p></div>
+  <div class="card"><p>“Friendly, inclusive and exceptional service.”</p></div>
+</div>
+</section>
+
+<section>
+<h2>Booking Request</h2>
+<div class="grid">
+  <div class="card">
+    <form action="mailto:cjmoorcroft@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Full Name" required>
+      <input type="tel" name="Phone" placeholder="Phone Number" required>
+      <textarea name="Details" rows="5" placeholder="Trip details, date & time" required></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
   </div>
+</div>
 </section>
 
 <div class="cta">
-  <h2>Bookings Essential</h2>
-  <a href="https://wa.me/27725842187" target="_blank">WhatsApp Booking</a>
+<h2>Bookings Essential</h2>
+<a href="https://wa.me/27725842187" target="_blank">WhatsApp Booking</a>
 </div>
 
 <footer>
-  <p><strong>Chesley's Private Luxury Shuttle Service</strong></p>
-  <p>Call / WhatsApp: 072 584 2187</p>
-  <p>Jeffreys Bay • Port Elizabeth • St Francis Bay</p>
+<div class="pride"></div>
+<p><strong>LGBTQIA+ Inclusive & Friendly Service</strong></p>
+<p>Chesley’s Private Luxury Shuttle Service</p>
+<p>Call / WhatsApp: 072 584 2187</p>
 </footer>
 
 <a href="https://wa.me/27725842187" class="whatsapp" target="_blank">💬</a>
