@@ -4,15 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chesley's Private Luxury Shuttle Service | Jeffreys Bay & Gqeberha</title>
+<title>Luxury Shuttle Service | Jeffreys Bay & Gqeberha | Chesley's Private Luxury Shuttle</title>
 
-<meta name="description" content="Luxury private shuttle and airport transfers in Jeffreys Bay, Port Elizabeth (Gqeberha) and St Francis Bay. Travel in comfort with Chesley's Private Luxury Shuttle Service.">
+<meta name="description" content="Chesley's Private Luxury Shuttle Service offers premium airport transfers, private shuttle and chauffeur services in Jeffreys Bay, Port Elizabeth (Gqeberha) and St Francis Bay.">
 <meta name="keywords" content="Luxury Shuttle Jeffreys Bay, Airport Transfers Gqeberha, Private Chauffeur Eastern Cape">
+<meta name="author" content="Chesley's Private Luxury Shuttle Service">
 
 <link rel="icon" type="image/png" href="favicon.png">
 
-<!-- GOOGLE ANALYTICS (GA4) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y226H1LKWY"></script>
+<!-- GOOGLE ANALYTICS (replace G-XXXXXXXXXX later) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -22,144 +23,156 @@
 
 <style>
 :root {
-  --gold: #d4af37;
-  --red: #8b0000;
-  --black: #0b0b0b;
-  --card: #151515;
+  --gold:#d4af37;
+  --red:#8b0000;
+  --black:#0b0b0b;
+  --card:#151515;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+*{box-sizing:border-box;margin:0;padding:0}
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--black);
-  color: #ffffff;
-  line-height: 1.6;
+body{
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  background:var(--black);
+  color:#fff;
+  line-height:1.6;
 }
 
 /* HEADER */
-header {
-  background: linear-gradient(135deg, var(--red), #000);
-  text-align: center;
-  padding: 80px 20px 70px;
+header{
+  background:linear-gradient(135deg,var(--red),#000);
+  text-align:center;
+  padding:80px 20px 70px;
 }
 
-.logo {
-  width: 100%;
-  max-width: 520px;
-  margin: 0 auto 25px;
-  opacity: 0;
-  animation: fadeIn 1.6s ease forwards;
+.logo{
+  width:100%;
+  max-width:520px;
+  margin:0 auto 25px;
+  display:block;
+  opacity:0;
+  animation:fadeIn 1.6s ease forwards;
 }
 
-@keyframes fadeIn {
-  to { opacity: 1; }
+@keyframes fadeIn{to{opacity:1}}
+
+.divider{
+  width:120px;
+  height:3px;
+  background:var(--gold);
+  margin:20px auto 25px;
 }
 
-.divider {
-  width: 120px;
-  height: 3px;
-  background: var(--gold);
-  margin: 20px auto;
+header h1{
+  color:var(--gold);
+  font-size:2.8rem;
 }
 
-header h1 {
-  color: var(--gold);
-  font-size: 2.8rem;
-}
-
-header p {
-  font-size: 1.15rem;
+header p{
+  font-size:1.15rem;
 }
 
 /* SECTIONS */
-section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 70px 20px;
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:70px 20px;
 }
 
-h2 {
-  text-align: center;
-  color: var(--gold);
-  font-size: 2.3rem;
-  margin-bottom: 40px;
+h2{
+  text-align:center;
+  color:var(--gold);
+  font-size:2.3rem;
+  margin-bottom:40px;
 }
 
 /* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
 }
 
 /* CARDS */
-.card {
-  background: var(--card);
-  border: 1px solid var(--red);
-  border-radius: 14px;
-  padding: 30px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+.card{
+  background:var(--card);
+  border:1px solid var(--red);
+  border-radius:14px;
+  padding:30px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.5);
 }
 
-/* BOOKING FORM */
-form input, form textarea {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: none;
+/* VEHICLE IMAGE */
+.vehicle img{
+  width:100%;
+  border-radius:14px;
+  margin-bottom:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.6);
 }
 
-form button {
-  width: 100%;
-  padding: 16px;
-  background: var(--gold);
-  border: none;
-  font-weight: bold;
-  border-radius: 50px;
-  cursor: pointer;
+/* FORM */
+form input, form textarea{
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:8px;
+}
+
+form button{
+  width:100%;
+  padding:16px;
+  background:var(--gold);
+  border:none;
+  font-weight:bold;
+  border-radius:50px;
+  cursor:pointer;
 }
 
 /* CTA */
-.cta {
-  background: linear-gradient(135deg, #000, var(--red));
-  text-align: center;
-  padding: 80px 20px;
+.cta{
+  background:linear-gradient(135deg,#000,var(--red));
+  text-align:center;
+  padding:80px 20px;
 }
 
-.cta a {
-  display: inline-block;
-  margin: 12px;
-  padding: 16px 36px;
-  background: var(--gold);
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 50px;
+.cta a{
+  display:inline-block;
+  margin:12px;
+  padding:16px 36px;
+  background:var(--gold);
+  color:#000;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:50px;
 }
 
 /* WHATSAPP FLOAT */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: #fff;
-  padding: 16px 18px;
-  border-radius: 50%;
-  font-size: 22px;
-  text-decoration: none;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-  z-index: 999;
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:16px 18px;
+  border-radius:50%;
+  font-size:22px;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
+  z-index:999;
 }
 
 /* FOOTER */
-footer {
-  background: #000;
-  text-align: center;
-  padding: 35px 20px;
-  font-size: 0.95rem;
+footer{
+  background:#000;
+  text-align:center;
+  padding:35px 20px;
+  font-size:.95rem;
+}
+
+@media(max-width:768px){
+  header h1{font-size:2.2rem}
+  .logo{max-width:360px}
 }
 </style>
 </head>
@@ -167,12 +180,65 @@ footer {
 <body>
 
 <header>
-  <img src="chesley-luxury-shuttle-logo.png" class="logo" alt="Chesley's Private Luxury Shuttle Service Logo">
+  <img src="chesley-luxury-shuttle-logo.png" alt="Chesley's Private Luxury Shuttle Service Logo" class="logo">
   <div class="divider"></div>
   <h1>Chesley's Private Luxury Shuttle Service</h1>
-  <p>Where Every Journey Feels First Class</p>
+  <p><strong>Where Every Journey Feels First Class</strong></p>
   <p>Jeffreys Bay • Port Elizabeth • St Francis Bay</p>
 </header>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Airport Transfers</h3>
+      <p>Luxury private transfers to and from Port Elizabeth (Gqeberha) Airport, ensuring punctual, stress-free travel.</p>
+    </div>
+    <div class="card">
+      <h3>Private Shuttle Services</h3>
+      <p>Discreet, comfortable and exclusive shuttle services for leisure or business travel.</p>
+    </div>
+    <div class="card">
+      <h3>Corporate Chauffeur</h3>
+      <p>Professional transport for executives and corporate clients who value reliability and presentation.</p>
+    </div>
+    <div class="card">
+      <h3>Custom Trips & Tours</h3>
+      <p>Tailor-made trips across the Eastern Cape, designed around your schedule and requirements.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Vehicle</h2>
+  <div class="grid vehicle">
+    <div class="card">
+      <h3>Red Mazda CX-5 Carbon Edition</h3>
+      <img src="https://i.imgur.com/zHT4IUd.jpg" alt="Red Mazda CX-5 Carbon Edition Luxury Shuttle">
+      <p>
+        • Air-conditioned comfort<br>
+        • Immaculately maintained<br>
+        • Private & spacious seating<br>
+        • Professional chauffeur
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Customer Testimonials</h2>
+  <div class="grid">
+    <div class="card">
+      <p>“Exceptional service, punctual and very professional. Highly recommended.”</p>
+    </div>
+    <div class="card">
+      <p>“Luxury travel at its best. The vehicle was spotless and extremely comfortable.”</p>
+    </div>
+    <div class="card">
+      <p>“Reliable, friendly and professional. Will definitely use again.”</p>
+    </div>
+  </div>
+</section>
 
 <section>
   <h2>Booking Request</h2>
@@ -190,13 +256,14 @@ footer {
 </section>
 
 <div class="cta">
-  <h2>Luxury Travel Starts Here</h2>
+  <h2>Bookings Essential</h2>
   <a href="https://wa.me/27725842187" target="_blank">WhatsApp Booking</a>
 </div>
 
 <footer>
-  <p>Chesley's Private Luxury Shuttle Service</p>
+  <p><strong>Chesley's Private Luxury Shuttle Service</strong></p>
   <p>Call / WhatsApp: 072 584 2187</p>
+  <p>Jeffreys Bay • Port Elizabeth • St Francis Bay</p>
 </footer>
 
 <a href="https://wa.me/27725842187" class="whatsapp" target="_blank">💬</a>
