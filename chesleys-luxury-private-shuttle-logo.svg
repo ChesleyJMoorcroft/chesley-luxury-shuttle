@@ -1,0 +1,32 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Outer Circle -->
+  <circle cx="150" cy="150" r="138" fill="#0b0b0b" stroke="#d4af37" stroke-width="5"></circle>
+
+  <!-- Inner Accent Ring -->
+  <circle cx="150" cy="150" r="126" fill="none" stroke="#8b0000" stroke-width="2"></circle>
+
+  <!-- Business Name: Top -->
+  <text x="150" y="95" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" letter-spacing="1.2" fill="#d4af37">
+    CHESLEY’S
+  </text>
+
+  <!-- Business Name: Middle -->
+  <text x="150" y="135" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="20" letter-spacing="1" fill="#ffffff">
+    LUXURY PRIVATE
+  </text>
+
+  <!-- Business Name: Bottom -->
+  <text x="150" y="165" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="20" letter-spacing="1" fill="#ffffff">
+    SHUTTLE SERVICE
+  </text>
+
+  <!-- Subtle Divider -->
+  <line x1="90" y1="185" x2="210" y2="185" stroke="#d4af37" stroke-width="2"></line>
+
+  <!-- Tagline / Mark -->
+  <text x="150" y="215" text-anchor="middle" font-family="Georgia, serif" font-size="14" letter-spacing="2" fill="#d4af37">
+    FIRST CLASS TRAVEL
+  </text>
+
+</svg>
