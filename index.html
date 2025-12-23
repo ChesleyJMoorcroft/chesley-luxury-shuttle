@@ -6,8 +6,8 @@
 
 <title>Chesley’s Private Luxury Shuttle Service | Jeffreys Bay & Gqeberha</title>
 
-<meta name="description" content="Luxury private shuttle and airport transfer services in Port Elizabeth (Gqeberha), Jeffreys Bay and St Francis Bay. LGBTQIA+ friendly premium chauffeur service.">
-<meta name="keywords" content="Luxury Shuttle Jeffreys Bay, Airport Transfers Gqeberha, Private Chauffeur Eastern Cape, Wedding Car Hire">
+<meta name="description" content="Luxury private shuttle services in Port Elizabeth (Gqeberha), Jeffreys Bay and St Francis Bay. Airport transfers, corporate travel, weddings and private hire.">
+<meta name="keywords" content="Luxury Shuttle Jeffreys Bay, Airport Transfers Gqeberha, Corporate Chauffeur, Wedding Car Hire">
 <meta name="author" content="Chesley’s Private Luxury Shuttle Service">
 
 <link rel="icon" type="image/png" href="favicon.png">
@@ -28,166 +28,53 @@ gtag('config', 'G-Y226H1LKWY');
   --black:#0b0b0b;
   --card:#151515;
 }
-
 *{margin:0;padding:0;box-sizing:border-box}
-
 body{
-  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  font-family:'Segoe UI',Tahoma,Verdana,sans-serif;
   background:var(--black);
   color:#fff;
   line-height:1.6;
 }
-
-/* HEADER */
 header{
   background:linear-gradient(135deg,var(--red),#000);
   padding:90px 20px 70px;
   text-align:center;
 }
-
-/* LOGO */
-.logo svg{
-  width:100%;
-  max-width:300px;
-  margin:0 auto 25px;
-  display:block;
-}
-
-/* DIVIDER */
-.divider{
-  width:120px;
-  height:3px;
-  background:var(--gold);
-  margin:20px auto 25px;
-}
-
-/* SECTIONS */
-section{
-  max-width:1200px;
-  margin:auto;
-  padding:70px 20px;
-}
-
-h2{
-  text-align:center;
-  color:var(--gold);
-  font-size:2.2rem;
-  margin-bottom:40px;
-}
-
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
-}
-
-/* CARD */
+.logo svg{max-width:300px;margin:0 auto 25px;display:block}
+.divider{width:120px;height:3px;background:var(--gold);margin:20px auto}
+section{max-width:1200px;margin:auto;padding:70px 20px}
+h2{text-align:center;color:var(--gold);margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
 .card{
   background:var(--card);
   border:1px solid var(--red);
   border-radius:14px;
   padding:30px;
-  box-shadow:0 15px 35px rgba(0,0,0,0.5);
 }
-
-/* SLIDER */
-.slider{
-  position:relative;
+.table{
   width:100%;
-  height:450px;
-  background:#000;
-  border-radius:14px;
-  overflow:hidden;
+  border-collapse:collapse;
 }
-
-.slide{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  opacity:0;
-  transition:opacity 1.2s ease;
+.table td,.table th{
+  padding:12px;
+  border-bottom:1px solid #333;
 }
-
-.slide.active{opacity:1}
-
-/* ARROWS */
-.nav{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  background:rgba(0,0,0,0.6);
-  color:#d4af37;
-  border:none;
-  font-size:30px;
-  padding:10px 16px;
-  cursor:pointer;
-  border-radius:50%;
-}
-
-.nav.prev{left:15px}
-.nav.next{right:15px}
-
-/* FORM */
-form input,form textarea{
-  width:100%;
-  padding:14px;
-  margin-bottom:15px;
-  border:none;
-  border-radius:8px;
-}
-
-form button{
-  width:100%;
-  padding:16px;
-  background:var(--gold);
-  border:none;
-  font-weight:bold;
-  border-radius:50px;
-}
-
-/* CTA */
-.cta{
-  background:linear-gradient(135deg,#000,var(--red));
-  text-align:center;
-  padding:80px 20px;
-}
-
-.cta a{
+.table th{color:var(--gold);text-align:left}
+.btn{
   display:inline-block;
-  margin:12px;
-  padding:16px 36px;
+  margin:10px;
+  padding:14px 28px;
   background:var(--gold);
   color:#000;
   font-weight:bold;
-  text-decoration:none;
   border-radius:50px;
-}
-
-/* WHATSAPP */
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:#fff;
-  padding:16px 18px;
-  border-radius:50%;
-  font-size:22px;
   text-decoration:none;
 }
-
-/* FOOTER */
 footer{
   background:#000;
   text-align:center;
   padding:35px 20px;
-  font-size:.95rem;
 }
-
-/* PRIDE */
 .pride{
   height:8px;
   background:linear-gradient(to right,#e40303,#ff8c00,#ffed00,#008026,#004dff,#750787);
@@ -198,121 +85,94 @@ footer{
 <body>
 
 <header>
-  <div class="logo">
-    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="150" cy="150" r="138" fill="#0b0b0b" stroke="#d4af37" stroke-width="5"/>
-      <circle cx="150" cy="150" r="126" fill="none" stroke="#8b0000" stroke-width="2"/>
-      <text x="150" y="95" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#d4af37">CHESLEY’S</text>
-      <text x="150" y="135" text-anchor="middle" font-family="Segoe UI, Arial" font-size="20" fill="#fff">PRIVATE LUXURY</text>
-      <text x="150" y="165" text-anchor="middle" font-family="Segoe UI, Arial" font-size="20" fill="#fff">SHUTTLE SERVICE</text>
-      <line x1="90" y1="185" x2="210" y2="185" stroke="#d4af37" stroke-width="2"/>
-      <text x="150" y="215" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#d4af37">FIRST CLASS TRAVEL</text>
-    </svg>
-  </div>
-
-  <div class="divider"></div>
-  <p><strong>Where Every Journey Feels First Class</strong></p>
-  <p>Port Elizabeth • Jeffreys Bay • St Francis Bay</p>
+<div class="logo">
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+<circle cx="150" cy="150" r="138" fill="#0b0b0b" stroke="#d4af37" stroke-width="5"/>
+<circle cx="150" cy="150" r="126" fill="none" stroke="#8b0000" stroke-width="2"/>
+<text x="150" y="95" text-anchor="middle" font-size="22" fill="#d4af37">CHESLEY’S</text>
+<text x="150" y="135" text-anchor="middle" font-size="20" fill="#fff">PRIVATE LUXURY</text>
+<text x="150" y="165" text-anchor="middle" font-size="20" fill="#fff">SHUTTLE SERVICE</text>
+</svg>
+</div>
+<div class="divider"></div>
+<p><strong>First Class Travel | Eastern Cape</strong></p>
 </header>
 
 <section>
-<h2>About Our Service</h2>
+<h2>Rates & Tariffs (Peak Season)</h2>
+
+<div style="text-align:center">
+<a class="btn" href="./Luxury_Shuttle_Rate_Card_FINAL_Peak_Season.pdf" target="_blank">
+Download Peak Season Rate Card (PDF)
+</a>
+</div>
+
 <div class="card">
-<p>
-Chesley’s Private Luxury Shuttle Service provides reliable, discreet and professional private transportation across Port Elizabeth (Gqeberha), Jeffreys Bay, St Francis Bay and surrounding Eastern Cape areas. We specialise in luxury airport transfers, private shuttle services, corporate travel and custom trips, offering a comfortable and personalised experience in a premium red Mazda CX-5 Carbon Edition.
-<br><br>
-Our service is ideal for business travellers, holidaymakers and guests who value punctuality, safety and comfort. All trips are private and pre-booked, ensuring attention to detail and a stress-free journey from start to finish. Bookings are essential and rates are available on request.
-</p>
+<table class="table">
+<tr><th>Local Transfers</th><th>Rate</th></tr>
+<tr><td>Base Booking Fee</td><td>R70</td></tr>
+<tr><td>Rate per KM (CX-5 SUV)</td><td>R18</td></tr>
+<tr><td>Minimum Trip (06:00–20:00)</td><td>R150</td></tr>
+<tr><td>Minimum Trip (20:00–06:00)</td><td>R220</td></tr>
+<tr><td>Waiting Time (after 10 min)</td><td>R4 / min</td></tr>
+</table>
+</div>
+
+<br>
+
+<div class="card">
+<table class="table">
+<tr><th>Airport & Inter-City Transfers</th><th>Rate</th></tr>
+<tr><td>Gqeberha Airport → Jeffreys Bay</td><td>R780</td></tr>
+<tr><td>Gqeberha Airport → St Francis Bay</td><td>R900</td></tr>
+<tr><td>Gqeberha Airport → Humansdorp</td><td>R720</td></tr>
+<tr><td>Jeffreys Bay ↔ St Francis Bay</td><td>R360</td></tr>
+<tr><td>Jeffreys Bay ↔ Gqeberha City</td><td>R700</td></tr>
+</table>
 </div>
 </section>
 
 <section>
-<h2>Our Services</h2>
+<h2>Corporate Accounts</h2>
+
+<div style="text-align:center">
+<a class="btn" href="./Luxury_Shuttle_Rate_Card_PEAK_With_Corporate_Accounts.pdf" target="_blank">
+Download Corporate Rate Card (PDF)
+</a>
+</div>
+
 <div class="grid">
-  <div class="card">Airport Transfers</div>
-  <div class="card">Private Shuttle Services</div>
-  <div class="card">Corporate Chauffeur Travel</div>
-  <div class="card">Custom Trips & Tours</div>
-  <div class="card">Car Event Hire – Weddings & Special Occasions</div>
+<div class="card">
+<h3>Corporate Benefits</h3>
+<ul>
+<li>Priority booking & guaranteed availability</li>
+<li>Dedicated chauffeur-driven Red Mazda CX-5</li>
+<li>Monthly invoicing & consolidated statements</li>
+<li>Agreed corporate & seasonal rates</li>
+<li>Airport meet-and-greet services</li>
+<li>Confidential, non-shared transport</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Ideal For</h3>
+<ul>
+<li>Corporate executives & business travellers</li>
+<li>Guesthouses, lodges & Airbnbs</li>
+<li>Property management companies</li>
+<li>Events, conferences & long-stay guests</li>
+</ul>
+<p><strong>Corporate accounts subject to approval.</strong></p>
+</div>
 </div>
 </section>
-
-<section>
-<h2>Our Vehicle</h2>
-<div class="grid">
-  <div class="card">
-    <h3>Red Mazda CX-5 Carbon Edition</h3>
-    <p>
-      • Air-conditioned luxury<br>
-      • Immaculately maintained<br>
-      • Private & spacious seating<br>
-      • On-board mobile charging stations<br>
-      • Professional chauffeur
-    </p>
-  </div>
-
-  <div class="slider">
-    <img src="./20251102_101719.jpg" class="slide active">
-    <img src="./20251102_101813.jpg" class="slide">
-    <img src="./20251102_101907.jpg" class="slide">
-    <img src="./20251102_102356.jpg" class="slide">
-    <button class="nav prev">&#10094;</button>
-    <button class="nav next">&#10095;</button>
-  </div>
-</div>
-</section>
-
-<section>
-<h2>Booking Request</h2>
-<div class="grid">
-  <div class="card">
-    <form action="mailto:cjmoorcroft@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Full Name" required>
-      <input type="tel" name="Phone" placeholder="Phone Number" required>
-      <textarea name="Details" rows="5" placeholder="Trip details" required></textarea>
-      <button type="submit">Submit Booking</button>
-    </form>
-  </div>
-</div>
-</section>
-
-<div class="cta">
-<a href="https://wa.me/27725842187" target="_blank">WhatsApp Booking</a>
-</div>
 
 <footer>
 <div class="pride"></div>
 <p><strong>LGBTQIA+ Inclusive & Friendly Service</strong></p>
 <p>Chesley’s Private Luxury Shuttle Service</p>
-<p>Call / WhatsApp: 072 584 2187</p>
+<p>072 584 2187 | WhatsApp Available</p>
 </footer>
-
-<a href="https://wa.me/27725842187" class="whatsapp" target="_blank">💬</a>
-
-<script>
-const slides=document.querySelectorAll('.slide');
-let current=0;
-let timer=setInterval(nextSlide,6000);
-
-function showSlide(i){
-  slides.forEach(s=>s.classList.remove('active'));
-  slides[i].classList.add('active');
-}
-function nextSlide(){
-  current=(current+1)%slides.length;
-  showSlide(current);
-}
-function prevSlide(){
-  current=(current-1+slides.length)%slides.length;
-  showSlide(current);
-}
-document.querySelector('.next').onclick=()=>{nextSlide();reset();}
-document.querySelector('.prev').onclick=()=>{prevSlide();reset();}
-function reset(){
-  clearInterval(timer);
-  timer=setInterval(nextSlide,6000);
-}
-</script>
 
 </body>
 </html>
