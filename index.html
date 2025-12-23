@@ -27,58 +27,25 @@ gtag('config', 'G-Y226H1LKWY');
   --black:#0b0b0b;
   --card:#151515;
 }
-
 *{margin:0;padding:0;box-sizing:border-box}
-
 body{
   font-family:'Segoe UI',Tahoma,Verdana,sans-serif;
   background:var(--black);
   color:#fff;
   line-height:1.6;
 }
-
-/* HEADER */
 header{
   background:linear-gradient(135deg,var(--red),#000);
   padding:40px 20px 70px;
   text-align:center;
 }
-
-.header-logo{
-  max-width:220px;
-  margin:0 auto 20px;
-}
-
+.header-logo{max-width:220px;margin:0 auto 20px}
 .header-logo svg{width:100%}
-
-header h1{
-  color:var(--gold);
-  font-size:2.6rem;
-}
-
+header h1{color:var(--gold);font-size:2.6rem}
 header p{font-size:1.15rem}
-
-/* SECTIONS */
-section{
-  max-width:1200px;
-  margin:auto;
-  padding:60px 20px;
-}
-
-h2{
-  color:var(--gold);
-  text-align:center;
-  margin-bottom:30px;
-}
-
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
-}
-
-/* CARD */
+section{max-width:1200px;margin:auto;padding:60px 20px}
+h2{color:var(--gold);text-align:center;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
 .card{
   background:var(--card);
   border:1px solid var(--red);
@@ -86,83 +53,47 @@ h2{
   padding:30px;
   box-shadow:0 15px 35px rgba(0,0,0,0.5);
 }
-
-/* SLIDER */
 .slider{
-  position:relative;
-  width:100%;
-  height:420px;
-  background:#000;
-  border-radius:14px;
-  overflow:hidden;
+  position:relative;width:100%;height:420px;background:#000;
+  border-radius:14px;overflow:hidden
 }
-
 .slide{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  opacity:0;
-  transition:opacity 1.2s ease;
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:contain;opacity:0;transition:opacity 1.2s ease
 }
-
 .slide.active{opacity:1}
-
-/* ARROWS */
 .nav{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  background:rgba(0,0,0,0.6);
-  color:#d4af37;
-  border:none;
-  font-size:30px;
-  padding:10px 16px;
-  cursor:pointer;
-  border-radius:50%;
+  position:absolute;top:50%;transform:translateY(-50%);
+  background:rgba(0,0,0,0.6);color:#d4af37;border:none;
+  font-size:30px;padding:10px 16px;border-radius:50%;cursor:pointer
 }
-
-.nav.prev{left:15px}
-.nav.next{right:15px}
-
-/* BUTTONS */
+.nav.prev{left:15px}.nav.next{right:15px}
 .btn{
-  display:inline-block;
-  padding:16px 36px;
-  background:var(--gold);
-  color:#000;
-  font-weight:bold;
-  border-radius:50px;
-  text-decoration:none;
-  margin:10px;
+  display:inline-block;padding:16px 36px;background:var(--gold);
+  color:#000;font-weight:bold;border-radius:50px;
+  text-decoration:none;margin:10px
 }
-
-/* WHATSAPP FLOAT */
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:12px;border-bottom:1px solid #333}
+.table th{color:var(--gold);text-align:left}
+input,textarea{
+  width:100%;padding:14px;margin-bottom:15px;
+  border-radius:8px;border:none
+}
+button{
+  width:100%;padding:16px;background:var(--gold);
+  border:none;font-weight:bold;border-radius:50px
+}
 .whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:#fff;
-  padding:16px 18px;
-  border-radius:50%;
-  font-size:22px;
-  text-decoration:none;
-  z-index:999;
+  position:fixed;bottom:20px;right:20px;
+  background:#25D366;color:#fff;
+  padding:16px 18px;border-radius:50%;
+  font-size:22px;text-decoration:none;z-index:999
 }
-
-/* FOOTER */
-footer{
-  background:#000;
-  text-align:center;
-  padding:30px 20px;
-  font-size:.95rem;
-}
-
+footer{background:#000;text-align:center;padding:30px 20px;font-size:.95rem}
 .pride{
   height:8px;
-  background:linear-gradient(to right,#e40303,#ff8c00,#ffed00,#008026,#004dff,#750787);
+  background:linear-gradient(to right,#e40303,#ff8c00,#ffed00,#008026,#004dff,#750787)
 }
 </style>
 </head>
@@ -170,24 +101,19 @@ footer{
 <body>
 
 <header>
-
-<!-- LOGO -->
 <div class="header-logo">
+<!-- LOGO -->
 <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="150" cy="150" r="138" fill="#0b0b0b" stroke="#d4af37" stroke-width="5"/>
-  <circle cx="150" cy="150" r="126" fill="none" stroke="#8b0000" stroke-width="2"/>
-  <text x="150" y="95" text-anchor="middle" font-size="22" fill="#d4af37">CHESLEY’S</text>
-  <text x="150" y="135" text-anchor="middle" font-size="20" fill="#ffffff">PRIVATE LUXURY</text>
-  <text x="150" y="165" text-anchor="middle" font-size="20" fill="#ffffff">SHUTTLE SERVICE</text>
-  <line x1="90" y1="185" x2="210" y2="185" stroke="#d4af37" stroke-width="2"/>
-  <text x="150" y="215" text-anchor="middle" font-size="14" fill="#d4af37">FIRST CLASS TRAVEL</text>
+<circle cx="150" cy="150" r="138" fill="#0b0b0b" stroke="#d4af37" stroke-width="5"/>
+<circle cx="150" cy="150" r="126" fill="none" stroke="#8b0000" stroke-width="2"/>
+<text x="150" y="95" text-anchor="middle" font-size="22" fill="#d4af37">CHESLEY’S</text>
+<text x="150" y="135" text-anchor="middle" font-size="20" fill="#fff">PRIVATE LUXURY</text>
+<text x="150" y="165" text-anchor="middle" font-size="20" fill="#fff">SHUTTLE SERVICE</text>
+<text x="150" y="215" text-anchor="middle" font-size="14" fill="#d4af37">FIRST CLASS TRAVEL</text>
 </svg>
 </div>
-
 <h1>Chesley’s Private Luxury Shuttle Service</h1>
-<p>Where Every Journey Feels First Class</p>
 <p>Jeffreys Bay • Port Elizabeth (Gqeberha) • St Francis Bay</p>
-
 </header>
 
 <section>
@@ -202,19 +128,27 @@ Our service is ideal for business travellers, holidaymakers and guests who value
 </section>
 
 <section>
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card">Luxury Airport Transfers</div>
+<div class="card">Private Shuttle Services</div>
+<div class="card">Corporate Travel</div>
+<div class="card">Custom Trips & Tours</div>
+<div class="card">Corporate Events & Special Occasions</div>
+</div>
+</section>
+
+<section>
 <h2>Our Vehicle</h2>
 <div class="grid">
 <div class="card">
-<h3>Red Mazda CX-5 Carbon Edition</h3>
 <p>
-• Air-conditioned comfort<br>
-• Immaculately maintained<br>
-• Private & spacious seating<br>
+• Red Mazda CX-5 Carbon Edition<br>
+• Air-conditioned luxury<br>
 • On-board mobile charging<br>
 • Professional chauffeur
 </p>
 </div>
-
 <div class="slider">
 <img src="./20251102_101719.jpg" class="slide active">
 <img src="./20251102_101813.jpg" class="slide">
@@ -227,13 +161,57 @@ Our service is ideal for business travellers, holidaymakers and guests who value
 </section>
 
 <section>
-<h2>Bookings & Payments</h2>
+<h2>Online Booking Request</h2>
+<div class="card">
+<form action="mailto:cjmoorcroft@gmail.com" method="post" enctype="text/plain">
+<input type="text" name="Name" placeholder="Full Name" required>
+<input type="tel" name="Phone" placeholder="Phone Number" required>
+<textarea name="Trip Details" rows="5" placeholder="Trip details, date & time" required></textarea>
+<button type="submit">Submit Booking Request</button>
+</form>
+</div>
+</section>
+
+<section>
+<h2>Peak Season Tariffs</h2>
+<div class="card">
+<table class="table">
+<tr><th>Base Booking Fee</th><td>R70</td></tr>
+<tr><th>Rate per KM</th><td>R18</td></tr>
+<tr><th>Minimum Trip (06:00–20:00)</th><td>R150</td></tr>
+<tr><th>Minimum Trip (20:00–06:00)</th><td>R220</td></tr>
+<tr><th>Waiting Time</th><td>R4 per minute (after 10 mins)</td></tr>
+</table>
+<a class="btn" href="./Luxury_Shuttle_Rate_Card_FINAL_Peak_Season.pdf" target="_blank">
+Download Peak Season Rate Card (PDF)
+</a>
+</div>
+</section>
+
+<section>
+<h2>Corporate Rates & Events</h2>
+<div class="grid">
+<div class="card">
+<ul>
+<li>Preferential corporate tariffs</li>
+<li>Priority bookings</li>
+<li>Monthly invoicing</li>
+<li>Dedicated luxury vehicle</li>
+<li>Corporate events & functions</li>
+</ul>
+<a class="btn" href="./Luxury_Shuttle_Rate_Card_PEAK_With_Corporate_Accounts.pdf" target="_blank">
+Download Corporate Rate Card (PDF)
+</a>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Payments & Contact</h2>
 <div class="card" style="text-align:center">
 <p><strong>Accepted Payment Methods:</strong></p>
-<p>EFT • Cash • Card Facilities Available</p>
-<br>
+<p>EFT • Cash • Card Facilities</p>
 <a class="btn" href="https://wa.me/27725842187" target="_blank">WhatsApp Booking</a>
-<a class="btn" href="https://www.facebook.com/profile.php?id=61585270065988" target="_blank">Visit us on Facebook</a>
 </div>
 </section>
 
@@ -250,25 +228,15 @@ Our service is ideal for business travellers, holidaymakers and guests who value
 const slides=document.querySelectorAll('.slide');
 let current=0;
 let timer=setInterval(nextSlide,6000);
-
 function showSlide(i){
-  slides.forEach(s=>s.classList.remove('active'));
-  slides[i].classList.add('active');
+slides.forEach(s=>s.classList.remove('active'));
+slides[i].classList.add('active');
 }
-function nextSlide(){
-  current=(current+1)%slides.length;
-  showSlide(current);
-}
-function prevSlide(){
-  current=(current-1+slides.length)%slides.length;
-  showSlide(current);
-}
+function nextSlide(){current=(current+1)%slides.length;showSlide(current);}
+function prevSlide(){current=(current-1+slides.length)%slides.length;showSlide(current);}
 document.querySelector('.next').onclick=()=>{nextSlide();reset();}
 document.querySelector('.prev').onclick=()=>{prevSlide();reset();}
-function reset(){
-  clearInterval(timer);
-  timer=setInterval(nextSlide,6000);
-}
+function reset(){clearInterval(timer);timer=setInterval(nextSlide,6000);}
 </script>
 
 </body>
