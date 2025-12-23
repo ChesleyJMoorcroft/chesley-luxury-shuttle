@@ -40,18 +40,23 @@ body{
 /* HEADER */
 header{
   background:linear-gradient(135deg,var(--red),#000);
-  padding:80px 20px;
+  padding:40px 20px 80px;
   text-align:center;
 }
+
+.header-logo{
+  max-width:220px;
+  margin:0 auto 20px;
+}
+
+.header-logo svg{width:100%}
 
 header h1{
   color:var(--gold);
   font-size:2.6rem;
 }
 
-header p{
-  font-size:1.15rem;
-}
+header p{font-size:1.15rem}
 
 /* SECTIONS */
 section{
@@ -181,6 +186,18 @@ footer{
 <body>
 
 <header>
+<div class="header-logo">
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="150" cy="150" r="138" fill="#0b0b0b" stroke="#d4af37" stroke-width="5"/>
+  <circle cx="150" cy="150" r="126" fill="none" stroke="#8b0000" stroke-width="2"/>
+  <text x="150" y="95" text-anchor="middle" font-size="22" fill="#d4af37">CHESLEY’S</text>
+  <text x="150" y="135" text-anchor="middle" font-size="20" fill="#ffffff">PRIVATE LUXURY</text>
+  <text x="150" y="165" text-anchor="middle" font-size="20" fill="#ffffff">SHUTTLE SERVICE</text>
+  <line x1="90" y1="185" x2="210" y2="185" stroke="#d4af37" stroke-width="2"/>
+  <text x="150" y="215" text-anchor="middle" font-size="14" fill="#d4af37">FIRST CLASS TRAVEL</text>
+</svg>
+</div>
+
 <h1>Chesley’s Private Luxury Shuttle Service</h1>
 <p>Where Every Journey Feels First Class</p>
 <p>Port Elizabeth • Jeffreys Bay • St Francis Bay</p>
@@ -189,25 +206,25 @@ footer{
 <section>
 <h2>Our Vehicle</h2>
 <div class="grid">
-  <div class="card">
-    <h3>Red Mazda CX-5 Carbon Edition</h3>
-    <p>
-      • Air-conditioned comfort<br>
-      • Immaculately maintained<br>
-      • Private & spacious seating<br>
-      • On-board mobile charging<br>
-      • Professional chauffeur
-    </p>
-  </div>
+<div class="card">
+<h3>Red Mazda CX-5 Carbon Edition</h3>
+<p>
+• Air-conditioned comfort<br>
+• Immaculately maintained<br>
+• Private & spacious seating<br>
+• On-board mobile charging<br>
+• Professional chauffeur
+</p>
+</div>
 
-  <div class="slider">
-    <img src="./20251102_101719.jpg" class="slide active">
-    <img src="./20251102_101813.jpg" class="slide">
-    <img src="./20251102_101907.jpg" class="slide">
-    <img src="./20251102_102356.jpg" class="slide">
-    <button class="nav prev">&#10094;</button>
-    <button class="nav next">&#10095;</button>
-  </div>
+<div class="slider">
+<img src="./20251102_101719.jpg" class="slide active">
+<img src="./20251102_101813.jpg" class="slide">
+<img src="./20251102_101907.jpg" class="slide">
+<img src="./20251102_102356.jpg" class="slide">
+<button class="nav prev">&#10094;</button>
+<button class="nav next">&#10095;</button>
+</div>
 </div>
 </section>
 
@@ -218,72 +235,43 @@ footer{
 </div>
 </section>
 
-<!-- ✅ TARIFFS INSERTED -->
 <section>
 <h2>Tariffs & Rates (Peak Season)</h2>
-
+<div class="card">
+<table class="table">
+<tr><th>Base Booking Fee</th><td>R70</td></tr>
+<tr><th>Rate per KM</th><td>R18</td></tr>
+<tr><th>Minimum Trip (06:00–20:00)</th><td>R150</td></tr>
+<tr><th>Minimum Trip (20:00–06:00)</th><td>R220</td></tr>
+<tr><th>Waiting Time</th><td>R4 per minute (after 10 mins)</td></tr>
+</table>
+</div>
 <div style="text-align:center">
 <a class="btn" href="./Luxury_Shuttle_Rate_Card_FINAL_Peak_Season.pdf" target="_blank">
 Download Full Rate Card (PDF)
 </a>
 </div>
-
-<div class="card">
-<table class="table">
-<tr><th>Local Transfers</th><th>Tariff</th></tr>
-<tr><td>Base Booking Fee</td><td>R70</td></tr>
-<tr><td>Rate per KM (Luxury SUV)</td><td>R18 per km</td></tr>
-<tr><td>Minimum Trip (06:00 – 20:00)</td><td>R150</td></tr>
-<tr><td>Minimum Trip (20:00 – 06:00)</td><td>R220</td></tr>
-<tr><td>Waiting Time (after 10 minutes)</td><td>R4 per minute</td></tr>
-</table>
-</div>
-
-<br>
-
-<div class="card">
-<table class="table">
-<tr><th>Airport & Intercity Transfers</th><th>Tariff</th></tr>
-<tr><td>Gqeberha Airport → Jeffreys Bay</td><td>R780</td></tr>
-<tr><td>Gqeberha Airport → St Francis Bay</td><td>R900</td></tr>
-<tr><td>Gqeberha Airport → Humansdorp</td><td>R720</td></tr>
-<tr><td>Jeffreys Bay ↔ St Francis Bay</td><td>R360</td></tr>
-<tr><td>Jeffreys Bay ↔ Gqeberha City</td><td>R700</td></tr>
-</table>
-</div>
 </section>
 
-<!-- ✅ CORPORATE RATES -->
 <section>
-<h2>Corporate Accounts & Rates</h2>
+<h2>Corporate Accounts</h2>
+<div class="grid">
+<div class="card">
+<h3>Corporate Benefits</h3>
+<ul>
+<li>Preferential corporate tariffs</li>
+<li>Priority bookings</li>
+<li>Monthly invoicing</li>
+<li>Dedicated luxury vehicle</li>
+<li>Confidential transport</li>
+</ul>
+</div>
 
-<div style="text-align:center">
+<div class="card">
+<h3>Corporate Rates</h3>
 <a class="btn" href="./Luxury_Shuttle_Rate_Card_PEAK_With_Corporate_Accounts.pdf" target="_blank">
 Download Corporate Rate Card (PDF)
 </a>
-</div>
-
-<div class="grid">
-<div class="card">
-<h3>Corporate Account Benefits</h3>
-<ul>
-<li>Preferential corporate tariffs</li>
-<li>Priority bookings & availability</li>
-<li>Monthly invoicing & statements</li>
-<li>Dedicated luxury vehicle & chauffeur</li>
-<li>Confidential, non-shared transport</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Ideal Corporate Clients</h3>
-<ul>
-<li>Corporate executives</li>
-<li>Guesthouses & lodges</li>
-<li>Airbnb & property managers</li>
-<li>Event & conference organisers</li>
-</ul>
-<p><strong>Corporate accounts subject to approval.</strong></p>
 </div>
 </div>
 </section>
