@@ -4,10 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chesley’s Private Luxury Shuttle Service | Jeffreys Bay & Gqeberha</title>
+<title>Chesley’s Private Luxury Shuttle Service</title>
 
-<meta name="description" content="Luxury private shuttle and airport transfer services in Port Elizabeth (Gqeberha), Jeffreys Bay and St Francis Bay. LGBTQIA+ friendly premium chauffeur service.">
-<meta name="keywords" content="Luxury Shuttle Jeffreys Bay, Airport Transfers Gqeberha, Private Chauffeur Eastern Cape">
+<meta name="description" content="Luxury private shuttle and airport transfers in Port Elizabeth, Jeffreys Bay and St Francis Bay. Travel in comfort with Chesley’s Private Luxury Shuttle Service.">
 <meta name="author" content="Chesley’s Private Luxury Shuttle Service">
 
 <link rel="icon" type="image/png" href="favicon.png">
@@ -32,50 +31,49 @@ gtag('config', 'G-Y226H1LKWY');
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
-  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  font-family:'Segoe UI',Tahoma,Verdana,sans-serif;
   background:var(--black);
   color:#fff;
   line-height:1.6;
 }
 
+/* HEADER */
 header{
   background:linear-gradient(135deg,var(--red),#000);
-  padding:90px 20px 70px;
+  padding:80px 20px;
   text-align:center;
 }
 
-.logo svg{
-  max-width:300px;
-  margin:0 auto 25px;
-  display:block;
+header h1{
+  color:var(--gold);
+  font-size:2.6rem;
 }
 
-.divider{
-  width:120px;
-  height:3px;
-  background:var(--gold);
-  margin:20px auto 25px;
+header p{
+  font-size:1.15rem;
 }
 
+/* SECTIONS */
 section{
   max-width:1200px;
   margin:auto;
-  padding:70px 20px;
+  padding:60px 20px;
 }
 
 h2{
-  text-align:center;
   color:var(--gold);
-  font-size:2.2rem;
+  text-align:center;
   margin-bottom:40px;
 }
 
+/* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:25px;
 }
 
+/* CARD */
 .card{
   background:var(--card);
   border:1px solid var(--red);
@@ -88,7 +86,7 @@ h2{
 .slider{
   position:relative;
   width:100%;
-  height:450px;
+  height:420px;
   background:#000;
   border-radius:14px;
   overflow:hidden;
@@ -106,6 +104,7 @@ h2{
 
 .slide.active{opacity:1}
 
+/* ARROWS */
 .nav{
   position:absolute;
   top:50%;
@@ -125,13 +124,13 @@ h2{
 /* BUTTONS */
 .btn{
   display:inline-block;
-  margin:12px;
   padding:16px 36px;
   background:var(--gold);
   color:#000;
   font-weight:bold;
-  text-decoration:none;
   border-radius:50px;
+  text-decoration:none;
+  margin:10px;
 }
 
 /* TABLE */
@@ -150,10 +149,26 @@ h2{
   text-align:left;
 }
 
+/* WHATSAPP FLOAT */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:16px 18px;
+  border-radius:50%;
+  font-size:22px;
+  text-decoration:none;
+  z-index:999;
+}
+
+/* FOOTER */
 footer{
   background:#000;
   text-align:center;
-  padding:35px 20px;
+  padding:30px 20px;
+  font-size:.95rem;
 }
 
 .pride{
@@ -166,25 +181,46 @@ footer{
 <body>
 
 <header>
-<div class="logo">
-<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-<circle cx="150" cy="150" r="138" fill="#0b0b0b" stroke="#d4af37" stroke-width="5"/>
-<circle cx="150" cy="150" r="126" fill="none" stroke="#8b0000" stroke-width="2"/>
-<text x="150" y="95" text-anchor="middle" font-size="22" fill="#d4af37">CHESLEY’S</text>
-<text x="150" y="135" text-anchor="middle" font-size="20" fill="#fff">PRIVATE LUXURY</text>
-<text x="150" y="165" text-anchor="middle" font-size="20" fill="#fff">SHUTTLE SERVICE</text>
-</svg>
-</div>
-<div class="divider"></div>
-<p><strong>Where Every Journey Feels First Class</strong></p>
+<h1>Chesley’s Private Luxury Shuttle Service</h1>
+<p>Where Every Journey Feels First Class</p>
 <p>Port Elizabeth • Jeffreys Bay • St Francis Bay</p>
 </header>
 
-<!-- ORIGINAL SECTIONS REMAIN UNCHANGED ABOVE THIS POINT -->
+<section>
+<h2>Our Vehicle</h2>
+<div class="grid">
+  <div class="card">
+    <h3>Red Mazda CX-5 Carbon Edition</h3>
+    <p>
+      • Air-conditioned comfort<br>
+      • Immaculately maintained<br>
+      • Private & spacious seating<br>
+      • On-board mobile charging<br>
+      • Professional chauffeur
+    </p>
+  </div>
+
+  <div class="slider">
+    <img src="./20251102_101719.jpg" class="slide active">
+    <img src="./20251102_101813.jpg" class="slide">
+    <img src="./20251102_101907.jpg" class="slide">
+    <img src="./20251102_102356.jpg" class="slide">
+    <button class="nav prev">&#10094;</button>
+    <button class="nav next">&#10095;</button>
+  </div>
+</div>
+</section>
 
 <section>
-<h2>Rates & Tariffs</h2>
+<h2>Bookings</h2>
+<div style="text-align:center">
+<a class="btn" href="https://wa.me/27725842187" target="_blank">WhatsApp Booking</a>
+</div>
+</section>
 
+<!-- ✅ ADDED: RATES CARD -->
+<section>
+<h2>Rates & Tariffs</h2>
 <div style="text-align:center">
 <a class="btn" href="./Luxury_Shuttle_Rate_Card_FINAL_Peak_Season.pdf" target="_blank">
 Download Rates Card (PDF)
@@ -194,18 +230,17 @@ Download Rates Card (PDF)
 <div class="card">
 <table class="table">
 <tr><th>Service</th><th>Pricing</th></tr>
-<tr><td>Airport Transfers</td><td>Rates available on request</td></tr>
-<tr><td>Private Shuttle Services</td><td>Rates available on request</td></tr>
-<tr><td>Corporate Travel</td><td>Rates available on request</td></tr>
-<tr><td>Custom Trips</td><td>Rates available on request</td></tr>
+<tr><td>Airport Transfers</td><td>On Request</td></tr>
+<tr><td>Private Shuttle</td><td>On Request</td></tr>
+<tr><td>Corporate Travel</td><td>On Request</td></tr>
+<tr><td>Custom Trips</td><td>On Request</td></tr>
 </table>
-<p style="margin-top:15px;"><strong>All trips are private. Bookings essential.</strong></p>
 </div>
 </section>
 
+<!-- ✅ ADDED: CORPORATE RATES -->
 <section>
-<h2>Corporate Rates & Accounts</h2>
-
+<h2>Corporate Accounts</h2>
 <div style="text-align:center">
 <a class="btn" href="./Luxury_Shuttle_Rate_Card_PEAK_With_Corporate_Accounts.pdf" target="_blank">
 Download Corporate Rates (PDF)
@@ -214,24 +249,23 @@ Download Corporate Rates (PDF)
 
 <div class="grid">
 <div class="card">
-<h3>Corporate Account Benefits</h3>
+<h3>Corporate Benefits</h3>
 <ul>
-<li>Priority bookings & availability</li>
-<li>Dedicated chauffeur-driven service</li>
+<li>Priority bookings</li>
+<li>Dedicated chauffeur service</li>
 <li>Monthly invoicing</li>
-<li>Preferential corporate rates</li>
+<li>Agreed corporate rates</li>
 <li>Private, non-shared transport</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Suitable For</h3>
+<h3>Ideal For</h3>
 <ul>
 <li>Business travellers</li>
 <li>Guesthouses & lodges</li>
-<li>Airbnb hosts</li>
-<li>Property management companies</li>
-<li>Corporate events & conferences</li>
+<li>Property managers</li>
+<li>Corporate events</li>
 </ul>
 </div>
 </div>
@@ -243,6 +277,33 @@ Download Corporate Rates (PDF)
 <p>Chesley’s Private Luxury Shuttle Service</p>
 <p>Call / WhatsApp: 072 584 2187</p>
 </footer>
+
+<a href="https://wa.me/27725842187" class="whatsapp" target="_blank">💬</a>
+
+<script>
+const slides=document.querySelectorAll('.slide');
+let current=0;
+let timer=setInterval(nextSlide,6000);
+
+function showSlide(i){
+  slides.forEach(s=>s.classList.remove('active'));
+  slides[i].classList.add('active');
+}
+function nextSlide(){
+  current=(current+1)%slides.length;
+  showSlide(current);
+}
+function prevSlide(){
+  current=(current-1+slides.length)%slides.length;
+  showSlide(current);
+}
+document.querySelector('.next').onclick=()=>{nextSlide();reset();}
+document.querySelector('.prev').onclick=()=>{prevSlide();reset();}
+function reset(){
+  clearInterval(timer);
+  timer=setInterval(nextSlide,6000);
+}
+</script>
 
 </body>
 </html>
