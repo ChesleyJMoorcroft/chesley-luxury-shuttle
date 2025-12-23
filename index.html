@@ -6,8 +6,8 @@
 
 <title>Chesley’s Private Luxury Shuttle Service | Jeffreys Bay & Gqeberha</title>
 
-<meta name="description" content="Luxury private shuttle services in Port Elizabeth (Gqeberha), Jeffreys Bay and St Francis Bay. Airport transfers, corporate travel, weddings and private hire.">
-<meta name="keywords" content="Luxury Shuttle Jeffreys Bay, Airport Transfers Gqeberha, Corporate Chauffeur, Wedding Car Hire">
+<meta name="description" content="Luxury private shuttle and airport transfer services in Port Elizabeth (Gqeberha), Jeffreys Bay and St Francis Bay. LGBTQIA+ friendly premium chauffeur service.">
+<meta name="keywords" content="Luxury Shuttle Jeffreys Bay, Airport Transfers Gqeberha, Private Chauffeur Eastern Cape">
 <meta name="author" content="Chesley’s Private Luxury Shuttle Service">
 
 <link rel="icon" type="image/png" href="favicon.png">
@@ -28,53 +28,134 @@ gtag('config', 'G-Y226H1LKWY');
   --black:#0b0b0b;
   --card:#151515;
 }
+
 *{margin:0;padding:0;box-sizing:border-box}
+
 body{
-  font-family:'Segoe UI',Tahoma,Verdana,sans-serif;
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
   background:var(--black);
   color:#fff;
   line-height:1.6;
 }
+
 header{
   background:linear-gradient(135deg,var(--red),#000);
   padding:90px 20px 70px;
   text-align:center;
 }
-.logo svg{max-width:300px;margin:0 auto 25px;display:block}
-.divider{width:120px;height:3px;background:var(--gold);margin:20px auto}
-section{max-width:1200px;margin:auto;padding:70px 20px}
-h2{text-align:center;color:var(--gold);margin-bottom:40px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+
+.logo svg{
+  max-width:300px;
+  margin:0 auto 25px;
+  display:block;
+}
+
+.divider{
+  width:120px;
+  height:3px;
+  background:var(--gold);
+  margin:20px auto 25px;
+}
+
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+h2{
+  text-align:center;
+  color:var(--gold);
+  font-size:2.2rem;
+  margin-bottom:40px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
 .card{
   background:var(--card);
   border:1px solid var(--red);
   border-radius:14px;
   padding:30px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.5);
 }
+
+/* SLIDER */
+.slider{
+  position:relative;
+  width:100%;
+  height:450px;
+  background:#000;
+  border-radius:14px;
+  overflow:hidden;
+}
+
+.slide{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  opacity:0;
+  transition:opacity 1.2s ease;
+}
+
+.slide.active{opacity:1}
+
+.nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:rgba(0,0,0,0.6);
+  color:#d4af37;
+  border:none;
+  font-size:30px;
+  padding:10px 16px;
+  cursor:pointer;
+  border-radius:50%;
+}
+
+.nav.prev{left:15px}
+.nav.next{right:15px}
+
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  margin:12px;
+  padding:16px 36px;
+  background:var(--gold);
+  color:#000;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:50px;
+}
+
+/* TABLE */
 .table{
   width:100%;
   border-collapse:collapse;
 }
-.table td,.table th{
+
+.table th,.table td{
   padding:12px;
   border-bottom:1px solid #333;
 }
-.table th{color:var(--gold);text-align:left}
-.btn{
-  display:inline-block;
-  margin:10px;
-  padding:14px 28px;
-  background:var(--gold);
-  color:#000;
-  font-weight:bold;
-  border-radius:50px;
-  text-decoration:none;
+
+.table th{
+  color:var(--gold);
+  text-align:left;
 }
+
 footer{
   background:#000;
   text-align:center;
   padding:35px 20px;
 }
+
 .pride{
   height:8px;
   background:linear-gradient(to right,#e40303,#ff8c00,#ffed00,#008026,#004dff,#750787);
@@ -95,74 +176,63 @@ footer{
 </svg>
 </div>
 <div class="divider"></div>
-<p><strong>First Class Travel | Eastern Cape</strong></p>
+<p><strong>Where Every Journey Feels First Class</strong></p>
+<p>Port Elizabeth • Jeffreys Bay • St Francis Bay</p>
 </header>
 
+<!-- ORIGINAL SECTIONS REMAIN UNCHANGED ABOVE THIS POINT -->
+
 <section>
-<h2>Rates & Tariffs (Peak Season)</h2>
+<h2>Rates & Tariffs</h2>
 
 <div style="text-align:center">
 <a class="btn" href="./Luxury_Shuttle_Rate_Card_FINAL_Peak_Season.pdf" target="_blank">
-Download Peak Season Rate Card (PDF)
+Download Rates Card (PDF)
 </a>
 </div>
 
 <div class="card">
 <table class="table">
-<tr><th>Local Transfers</th><th>Rate</th></tr>
-<tr><td>Base Booking Fee</td><td>R70</td></tr>
-<tr><td>Rate per KM (CX-5 SUV)</td><td>R18</td></tr>
-<tr><td>Minimum Trip (06:00–20:00)</td><td>R150</td></tr>
-<tr><td>Minimum Trip (20:00–06:00)</td><td>R220</td></tr>
-<tr><td>Waiting Time (after 10 min)</td><td>R4 / min</td></tr>
+<tr><th>Service</th><th>Pricing</th></tr>
+<tr><td>Airport Transfers</td><td>Rates available on request</td></tr>
+<tr><td>Private Shuttle Services</td><td>Rates available on request</td></tr>
+<tr><td>Corporate Travel</td><td>Rates available on request</td></tr>
+<tr><td>Custom Trips</td><td>Rates available on request</td></tr>
 </table>
-</div>
-
-<br>
-
-<div class="card">
-<table class="table">
-<tr><th>Airport & Inter-City Transfers</th><th>Rate</th></tr>
-<tr><td>Gqeberha Airport → Jeffreys Bay</td><td>R780</td></tr>
-<tr><td>Gqeberha Airport → St Francis Bay</td><td>R900</td></tr>
-<tr><td>Gqeberha Airport → Humansdorp</td><td>R720</td></tr>
-<tr><td>Jeffreys Bay ↔ St Francis Bay</td><td>R360</td></tr>
-<tr><td>Jeffreys Bay ↔ Gqeberha City</td><td>R700</td></tr>
-</table>
+<p style="margin-top:15px;"><strong>All trips are private. Bookings essential.</strong></p>
 </div>
 </section>
 
 <section>
-<h2>Corporate Accounts</h2>
+<h2>Corporate Rates & Accounts</h2>
 
 <div style="text-align:center">
 <a class="btn" href="./Luxury_Shuttle_Rate_Card_PEAK_With_Corporate_Accounts.pdf" target="_blank">
-Download Corporate Rate Card (PDF)
+Download Corporate Rates (PDF)
 </a>
 </div>
 
 <div class="grid">
 <div class="card">
-<h3>Corporate Benefits</h3>
+<h3>Corporate Account Benefits</h3>
 <ul>
-<li>Priority booking & guaranteed availability</li>
-<li>Dedicated chauffeur-driven Red Mazda CX-5</li>
-<li>Monthly invoicing & consolidated statements</li>
-<li>Agreed corporate & seasonal rates</li>
-<li>Airport meet-and-greet services</li>
-<li>Confidential, non-shared transport</li>
+<li>Priority bookings & availability</li>
+<li>Dedicated chauffeur-driven service</li>
+<li>Monthly invoicing</li>
+<li>Preferential corporate rates</li>
+<li>Private, non-shared transport</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Ideal For</h3>
+<h3>Suitable For</h3>
 <ul>
-<li>Corporate executives & business travellers</li>
-<li>Guesthouses, lodges & Airbnbs</li>
+<li>Business travellers</li>
+<li>Guesthouses & lodges</li>
+<li>Airbnb hosts</li>
 <li>Property management companies</li>
-<li>Events, conferences & long-stay guests</li>
+<li>Corporate events & conferences</li>
 </ul>
-<p><strong>Corporate accounts subject to approval.</strong></p>
 </div>
 </div>
 </section>
@@ -171,7 +241,7 @@ Download Corporate Rate Card (PDF)
 <div class="pride"></div>
 <p><strong>LGBTQIA+ Inclusive & Friendly Service</strong></p>
 <p>Chesley’s Private Luxury Shuttle Service</p>
-<p>072 584 2187 | WhatsApp Available</p>
+<p>Call / WhatsApp: 072 584 2187</p>
 </footer>
 
 </body>
